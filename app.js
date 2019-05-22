@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(csp({
   directives: {
-    frameAncestors: ['reactframe.com'],
+    frameAncestors: ["'self'",'reactframe.com','drewlawton.com'],
     imgSrc: ["'self'"],
     reportUri: `/csp`
   },
