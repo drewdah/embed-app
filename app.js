@@ -25,7 +25,7 @@ app.use(csp({
   directives: {
     frameAncestors: ["'self'",'http://drewlawton.com'],
     imgSrc: ["'self'"],
-    reportUri: `/csp`
+    reportUri: `https://embed-test.herokuapp.com/csp`
   },
   browserSniff: false
 }))
